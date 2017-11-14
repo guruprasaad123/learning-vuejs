@@ -1,0 +1,123 @@
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        Vue listing
+    </title>
+    <script src="Vue.js" text="text/javascript"> </script>
+    <style text="text/css">
+
+    body{
+     
+    }
+        *{
+            background-color: #8C9EFF;
+        }
+        h1{
+            font-family:sans-serif;
+            font-weight:bold;
+            color:#3F51B5;
+        }
+        li
+        {
+            list-style:square ;
+            display:list-item;
+            padding:10px;
+            line-height: 20px;
+            background-color: inherit;
+
+        }
+        
+        #lists
+        {
+            
+            margin :0 auto;
+        }
+
+        #lists > h1 {
+            background-color:inherit;
+        }
+
+        #lists > ul:empty::after
+        {
+        content: attr(placeholder);
+        }
+
+        #lists input 
+        {
+            background-color: white;
+            margin : 0px 30px 20px 0px;
+            border: 2px solid #1A237E;
+
+            width : 40%;
+            font-family: sans-serif;
+            font-size: 20px;
+
+        }
+        #names{
+            border:  2px solid #1A237E;
+            border-spacing: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="lists">
+
+    <h1>{{header}}</h1>
+    <input v-model="input" id="input" type="text"  >
+
+    <div id="names">
+        <ul placeholder="Empty" >
+        <li v-for="name in computed_list" >{{name.name}} </li>
+        </ul>
+    </div>
+
+</div>
+<script text="text/javascript" >
+    let vue= new Vue({
+        el:'#lists',
+        data:{
+            search:false,
+            header:'Lists',
+            input:'',
+            names:[
+                {name:'Guruprasaad',company:'google'},
+                {name:'dilep',company:'unisoft'},
+                {name:'jaga',company:'army'},
+                {name:'santhosh',company:'manipal'},
+                {name:'kishore',company:'datascience'}
+            ],
+        },computed:{
+            computed_list(){
+                if(this.input==='')
+                    return this.names;
+                console.log('computing...');
+
+              /*  let arr = [];
+                   for(name_list of this.names)
+                   {
+                       if(name_list.name.includes(this.input))
+                       {
+                           arr.push(name_list);
+                           console.log(name_list.name);
+                       }
+                   }
+              return arr;*/
+return this.names.filter((values)=> values.name.startsWith(this.input));
+
+            }
+        },
+        methods:{
+
+
+        },
+        mounted(){
+            this.header='shortlisted'
+        }
+    });
+</script>
+
+</body>
+
+
+</html>
