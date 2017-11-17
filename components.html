@@ -5,13 +5,60 @@
     Vue compoments
     </title>    
 <script src="Vue_2.5.3.js"> </script>
+<style text="text/css">
+.hover{
+    color:aqua;
+}
+</style>
 </head>
 
 <body>
 
 
+    <div class="container" id="main"  >
+    <d>
+        <heading context=" Wolverine , Logan" @hovered="state= (state=='') ?'hover':'' " :classname="state"  >
+        
+        </heading>
+      
+    </d>
+        </div>
 
     <script text="text/javascript">
+
+    Vue.component('heading',{
+              
+              props:{                           //['context', 'classname']
+                  context:{required:true},
+                  classname:{required:true}
+              },
+              template:`
+              <div >
+              <h1 :class="classname"   >
+                 {{context}}
+                 </h1> 
+                 <button @click="$emit('hovered')">
+                    click me!
+                    </button>
+                 </div>`  ,
+
+            
+
+    });
+   
+
+    let vue = new Vue({
+        el:"#main",
+        data:{
+           state:''
+        },
+        components:{
+                   'd':{
+                        template:'<div><slot></slot></div>'
+                       }
+                   }  
+        
+    });
 
 
     </script>

@@ -1,0 +1,32 @@
+<html>
+    
+    <head>
+    <title>
+       bootstrap-Vue
+        </title>    
+        <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap@next/dist/css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+        <script src="https://unpkg.com/http-vue-loader"></script>
+    </head>
+    <body>
+<div id="bootstrap" class="bootstrap">
+    <alert>
+        </alert>
+    </div>
+
+
+    <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+            <script src="Vue_2.5.3.js"> </script>
+            
+           <script>
+           
+            let vue= new Vue({
+               el:"#bootstrap",
+                components:{
+                           'alert':httpVueLoader('alert.vue')
+                     }
+                    });
+           </script>
+</body>
+</html>    
