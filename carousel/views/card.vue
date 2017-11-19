@@ -1,7 +1,7 @@
 <template>
 
 <div class="card text-center" :style="cardstyle">
-    <img class="rounded card-img-top " :src="imagesrc" style="" alt="Card image cap">
+    <img class="card-img-top " :src="imagesrc" style="" alt="Card image cap">
     <div class="card-body"  style="color:black;" >
         <h4 class="card-title">{{title}}</h4>
         <p class="card-text" style="color:black;" > <slot></slot> </p>
