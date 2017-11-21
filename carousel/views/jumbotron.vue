@@ -1,8 +1,13 @@
 <template>
-<div class="jumbotron">
-  <h1 class="display-5">{{header}}</h1>
+<div id="jumbotron " class="jumbotron text-center">
+  <div class="container">
+  <h1 >{{header}}</h1>
   <p class="lead"><slot></slot></p>
+  <div class="col" >
 
+ </div>
+  </div>
+  
 </div>
 
 </template>
@@ -24,5 +29,8 @@ module.exports = {
 
 </script>
 <style >
+#jumbotron{
+  display:block;
 
+}
 </style>

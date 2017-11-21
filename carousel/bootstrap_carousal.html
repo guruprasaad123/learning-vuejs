@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="bootstrap-social.css" >
 <style text="text/css">
 
  .carousel-inner  {
@@ -28,17 +28,42 @@ font-family: sans-serif;
 
 </head>
   <body>
-      <script type="text/javascript" >
-
-            </script>
+      
     <div id="container" style="max-width: 100%;margin:0px auto;" >
-     <jumbotron header="Eqza Viffa Tech">
-       We provide Software and hardware support for both Bussiness/Office
-    </jumbotron>
+      <!jumbotron>
+  
+<jumbotron header="Eqza viffa Tech">
+We create software and Hardware for both office / Bussiness  
 
+         <nav-justify>
+           <item> 
+             <social icon="twitter"  >
+              Tweet us !
+            </social>
+          </item>
+           <item>
+              <social icon="instagram" >
+                  Insta us !
+              </social>
+            </item>
+            <item>
+                <social icon="linkedin" >
+                    Follow us !
+                </social>
+              </item>
+              <item>
+                  <social icon="pinterest" >
+                      Pin us !
+                  </social>
+                </item>
+           </nav-justify>
 
+ 
 
-         <bar styling="background-color:#000000" >
+</jumbotron>
+
+<!navigation>
+         <bar styling="background-color:#000;margin-top:-30px;padding:0px;" >
            <navigation  reference="#" > <font cls="fa fa-home fa-fw" > </font> Home </navigation>
            <navigation  reference="#services" > <font cls="fa fa-cogs services"></font> Services </navigation>
            <navigation  reference="#products" > <font cls="fa fa-cubes"></font> Products </navigation>
@@ -54,7 +79,7 @@ font-family: sans-serif;
             <li  data-target="#carousel-view" data-slide-to="3" > </li>
         </ol>
 
-
+<!carousel>
             <div class="carousel-inner" role="listbox" >
 
                 <div class="carousel-item active" >
@@ -112,13 +137,93 @@ font-family: sans-serif;
                 <span class="sr-only">Next</span>
               </a>
     </div>
+
+    <!services>
    <div id="services" >
       <div class="card bg-dark text-white" >
           <img class="card-img" src="img/bubbles-full.jpg" alt="Card image">
           <div class="card-img-overlay">
             <h1 class="card-title">Software Services</h1>
             <p class="card-text">We take care of your software so you can leave it us and Sit back and relax</p>
-
+           <!card-columns>
+         <!-- Nav tabs
+  
+        -->
+<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><font cls="fa fa-mobile"></font>  Front-end</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><font cls="fa fa-server"></font> backend</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false"> <font cls="fa fa-database"></font> Datascience/Analytics</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false"> <font cls="fa fa-desktop"></font> Machine Learning</a>
+    </li>
+  </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Website Designing</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Mobile </a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="card" style='color:black'>
+            <h4 class="card-header">Featured</h4>
+            <div class="card-body">
+              <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+        <div class="card text-center" style='color:black'>
+            <h4 class="card-header">
+              Featured
+            </h4>
+            <div class="card-body">
+              <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+        <div class="card" style='color:black'>
+            <h4 class="card-header">
+              Featured
+            </h4>
+            <div class="card-body">
+              <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a class="btn  btn-social btn-twitter btn-primary" href="#">
+                  <span class="fa fa-twitter"></span> Sign in with Twitter
+                </a>
+            </div>
+          </div>
+    </div>
+  </div>
+            
           </div>
         </div>
 
@@ -168,6 +273,8 @@ font-family: sans-serif;
                        Those who believe in achieving something great apart from others.we seek <span>Innovation</span>
                          </p>
                          <a href="#" class="btn  btn-primary">who are We&nbsp;<i class="fa fa-question fa-lg" aria-hidden="true"></i></a>
+                       
+                      
                         </div>
                         </div>
                  </div>
@@ -178,12 +285,41 @@ font-family: sans-serif;
 
 </div>
 <script src="Vue_2.5.3.js"> </script>
+<!--
+
+ -->
 <script src="https://unpkg.com/http-vue-loader"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script text="text/javascript">
-let product = new Vue({
+
+Vue.component('social',{
+      props:['icon','styling'],
+      template:`
+          <a :class="'btn btn-block btn-social btn-'+icon" :style="styling" >
+            <span :class="'fa fa-'+icon"></span>  <slot></slot>
+          </a> `,
+          data()
+          {
+            return {
+            
+            }
+          }
+         
+}
+  );
+  Vue.component('nav-justify',{
+
+template:`<ul class="nav justify-content-center"><slot></slot> </ul>`,
+  }
+  );
+  Vue.component('item',{
+    template:`<li class="nav-item" style="margin-left:20px;margin-top:10px"><slot></slot></li>`
+  });
+
+
+let main = new Vue({
 el:"#container",
 components:{
   'card'       : httpVueLoader('./views/card.vue'),
@@ -197,7 +333,9 @@ components:{
   'font':{
     props:['cls'],
     template:'  <i :class="cls"></i>'
-    }
+    },
+    
+
 }
 
 });

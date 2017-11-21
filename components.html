@@ -17,7 +17,7 @@
 
     <div class="container" id="main"  >
     <d>
-        <heading context=" Wolverine , Logan" @hovered="state= (state=='') ?'hover':'' " :classname="state"  >
+        <heading context="Logan" @hovered="state= (state=='') ?'hover':'' " :classname="state"  >
         
         </heading>
       
@@ -29,13 +29,16 @@
     Vue.component('heading',{
               
               props:{                           //['context', 'classname']
-                  context:{required:true},
+                  context:{
+                      required:true
+                      
+                      },
                   classname:{required:true}
               },
               template:`
               <div >
               <h1 :class="classname"   >
-                 {{context}}
+                 {{'Wolverine '+context}}
                  </h1> 
                  <button @click="$emit('hovered')">
                     click me!
