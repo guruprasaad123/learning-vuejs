@@ -18,6 +18,11 @@ font-family: sans-serif;
   color:gray;
   font-weight:bolder;
 }
+#tabs span
+{
+  color:gray;
+font-weight:bolder;
+}
 #card-id{
   color:black;
   text-align: center;
@@ -32,31 +37,10 @@ font-family: sans-serif;
     <div id="container" style="max-width: 100%;margin:0px auto;" >
       <!jumbotron>
   
-<jumbotron header="Eqza viffa Tech">
+<jumbotron header="Eqra viffa Tech">
 We create software and Hardware for both office / Bussiness  
 
-         <nav-justify>
-           <item> 
-             <social icon="twitter"  >
-              Tweet us !
-            </social>
-          </item>
-           <item>
-              <social icon="instagram" >
-                  Insta us !
-              </social>
-            </item>
-            <item>
-                <social icon="linkedin" >
-                    Follow us !
-                </social>
-              </item>
-              <item>
-                  <social icon="pinterest" >
-                      Pin us !
-                  </social>
-                </item>
-           </nav-justify>
+        
 
  
 
@@ -68,6 +52,7 @@ We create software and Hardware for both office / Bussiness
            <navigation  reference="#services" > <font cls="fa fa-cogs services"></font> Services </navigation>
            <navigation  reference="#products" > <font cls="fa fa-cubes"></font> Products </navigation>
            <navigation  reference="#about-us" > <font cls="fa fa-user-circle-o"></font> Aboutus </navigation>
+           <navigation  reference="#contact-us" > <font cls="fa fa-id-card-o"></font> Contact us </navigation>
           </bar>
 
             <div  id="carousel-view" class="carousel slide" data-ride="carousel" >
@@ -141,7 +126,7 @@ We create software and Hardware for both office / Bussiness
     <!services>
    <div id="services" >
       <div class="card bg-dark text-white" >
-          <img class="card-img" src="img/bubbles-full.jpg" alt="Card image">
+          <img class="card-img" src="img/night-love.jpg" alt="Card image">
           <div class="card-img-overlay">
             <h1 class="card-title">Software Services</h1>
             <p class="card-text">We take care of your software so you can leave it us and Sit back and relax</p>
@@ -151,7 +136,7 @@ We create software and Hardware for both office / Bussiness
         -->
 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><font cls="fa fa-mobile"></font>  Front-end</a>
+      <a class="nav-link active"  id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><font cls="fa fa-mobile"></font>  Front-end</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><font cls="fa fa-server"></font> backend</a>
@@ -165,25 +150,48 @@ We create software and Hardware for both office / Bussiness
   </ul>
   
   <!-- Tab panes -->
-  <div class="tab-content">
+  <div class="tab-content" id="tabs" style="color:#000">
     <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <div class="card-deck text-center" style="color:#000">
-          <div class="card text-center" style="width: 20rem;margin-right:150px">
+        <div class="card text-center">
+            <div class="card-header">
+              <h3>
+             Quote of the Day
+              </h3>
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>If you have it done for Good ,just make it Look Good.</p>
+                <footer class="blockquote-footer">~ <cite title="Source Title">Bill Gates</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+      
+      <div class="card-deck text-center" style="color:#000;margin-top:2rem;">
+          <div class="card text-center" style="width: 20rem;margin:10px 150px 10px 150px;">
               <div class="card-body">
-                <h4 class="card-title">Why choose Vuejs?</h4>
-                <p class="card-text">
-                  A progressive javascript framework ,which gives reactivity to users interaction.
-                  you can also use Angular and React with Vue ,which makes it way more awesome.
-                       
+                <h4 class="card-title">Why choose <a href="#" >Vuejs?</a></h4>
+                <p class="card-text" style="padding:20px" >
+                  A progressive<span> javascript framework </span>,which gives reactivity to users interaction.
+                  you can also use <a href="#">Angular</a> and <a href="#">React</a> with<span> Vue</span> ,which makes it way more awesome.
+                       Visit a Quick walkthought about <a href="#"> vuejs Guide. </a>
+                       Vuejs is compatible with <span>Nativescript </span>,which can
+                        be used to build apps for  <font cls="fa fa-android"> </font> <span> Android </span>
+                         and  <font cls="fa fa-mobile"> </font> <span>ios</span>
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="card-link">Frameworks</a>
+                <a href="#" class="card-link">cross-platfrom development</a>
               </div>
             </div>
-            <div class="card text-center" style="width: 20rem;">
+            <div class="card text-center"  style="width: 20rem;margin:10px 150px 10px 150px;">
                 <div class="card-body">
-                  <h4 class="card-title">Special title treatment</h4>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h4 class="card-title">UI/UX </h4>
+                  <p class="card-text"style="padding:20px;">
+                    Most of the mobile users are<span> Android</span> and <span>Apple</span>'s Iphone users ,
+                    So We build app's<a href="#"> front-end </a> with their own <span> native programming 
+                      </span> language ,so
+                    that   <span> native developers</span> can benefit .
+                  </p>
+                  <p class="card-text"><small class="text-muted">Our Community is  getting  Stronger,Everyday</small></p>
                 </div>
               </div>
       </div>
@@ -252,7 +260,7 @@ We create software and Hardware for both office / Bussiness
         and better by making to it more smarter than
         it was .
    </card>
-   <card title="Bussiness guide" imagesrc="img/business.png" bottom="we can handle any business">
+   <card title="Automation" imagesrc="img/business.png" bottom="we can handle any business">
     Nowadays , business is getting hardware
     so here we'll make it easy for you.
     you can count on us.
@@ -268,29 +276,91 @@ We create software and Hardware for both office / Bussiness
                     <div class="card-img-overlay">
                     <h1 class="card-title">About us </h1>
                     <div class="card text-center"style=" width:20rem;margin:0px auto;">
-                        <img class="card-img-top" src="img/bob-marley.jpg" style="width:inherit;margin:0px auto;" alt="bob-marley">
+                        <img class="card-img-top" src="img/bob-marley.jpg" style="height:inherit;width:inherit;margin:0px auto;" alt="bob-marley">
                         <div class="card-body" >
                           <p class="card-text" id="card-id"  >
                        We are a Group of engineers who believed in <span>creativity , Innovation.</span>
-                       Those who believe in achieving something great apart from others.we seek <span>Innovation</span>
+                       Above All we seek <span>Innovation</span>
                          </p>
                          <a href="#" class="btn  btn-primary">who are We&nbsp;<i class="fa fa-question fa-lg" aria-hidden="true"></i></a>
                        
+                         <nav-justify style="width:inherit;margin:0px auto;margin-top:20px;">
+                         <item styling="margin:0px auto;" >
+                                   <social-icon type="twitter"></social-icon>
+                         </item>
+                         <item styling="margin:0px auto;" >
+                            <social-icon type="pinterest"></social-icon>
+                         </item>
+                         <item styling="margin:0px auto;" >
+                            <social-icon type="instagram"></social-icon>
+                          </item>
+                          <item styling="margin:0px auto;" >
+                              <social-icon type="linkedin"></social-icon>
+                            </item>
+                          <item styling="margin:0px auto;" >
+                                <social-icon type="facebook"></social-icon>
+                          </item>
+                          <item styling="margin:0px auto;">
+                                  <social-icon type="github"></social-icon>
+                          </item>
+                                     
+                       </nav-justify>
                       
                         </div>
                         </div>
-                 </div>
-
+                        <nav-justify>
+                            <item> 
+                              <social icon="twitter"  >
+                               Tweet us !
+                             </social>
+                           </item>
+                            <item>
+                               <social icon="instagram" >
+                                   Insta us !
+                               </social>
+                             </item>
+                             <item>
+                                 <social icon="linkedin" >
+                                     Follow us !
+                                 </social>
+                               </item>
+                               <item>
+                                   <social icon="pinterest" >
+                                       Pin us !
+                                   </social>
+                                 </item>
+                            </nav-justify>
+                      </div>
+                
 
                 </div>
+                 
   </div>
+  <div id="comtact-us">
+      <div class="card bg-dark text-white">
+       <img class="card-img "src="img/mtv.jpg" alt="About-us">
+          <div class="card-img-overlay">
+          <h1 class="card-title">For contact </h1>
+              <address>
+                <h3>Eqra viffa tech</h3>
+                <br/>
+                1445,5th Avenue,
+                <br/>
+                1st floor lal-bahabur building,
+                <br/>
+                bangalore, 
+              </address>
 
+          </div>
+          </div>
+  </div>
+  
 </div>
 <script src="Vue_2.5.3.js"> </script>
 <!--
-
- -->
 <script src="https://unpkg.com/http-vue-loader"></script>
+ -->
+<script src="http-vue-loader.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -317,7 +387,12 @@ template:`<ul class="nav justify-content-center"><slot></slot> </ul>`,
   }
   );
   Vue.component('item',{
-    template:`<li class="nav-item" style="margin-left:20px;margin-top:10px"><slot></slot></li>`
+    props:{
+      styling:{
+        default:'margin-left:20px;margin-top:10px',
+      }
+    },
+    template:`<li class="nav-item" :style="styling"><slot></slot></li>`
   });
 
 
@@ -328,10 +403,18 @@ components:{
   'card-desk'  : httpVueLoader('./views/card-desk.vue'),
   'jumbotron'  : httpVueLoader('./views/jumbotron.vue'),
   'navigation' : httpVueLoader('./views/navigation.vue'),
+  'card-center': httpVueLoader('./views/card-center.vue'),
   'bar':{
     props:['styling'],
     template:'<nav class="nav nav-pills nav-fill"  :style="styling" ><slot></slot> </nav>',
   },
+  'social-icon':{
+    props:['type'],
+  template:`<a :class="'btn btn-social-icon btn-'+type">
+    <span :class="'fa fa-'+type"></span>
+  </a>`
+  },
+
   'font':{
     props:['cls'],
     template:'  <i :class="cls"></i>'
