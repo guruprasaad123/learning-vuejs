@@ -34,27 +34,34 @@ font-weight:bolder;
 </head>
   <body>
       
-    <div id="container" style="max-width: 100%;margin:0px auto;" >
+    <div id="container" style="width:100%;margin:0px auto" >
       <!jumbotron>
   
-<jumbotron header="Eqra viffa Tech">
+<jumbotron header="Eqra viffa Tech@">
 We create software and Hardware for both office / Bussiness  
-
-        
-
- 
-
 </jumbotron>
 
 <!navigation>
+<!--
+<div class="row"> 
+  <div class="col-12 col-sm-12">
+    -->
          <bar styling="background-color:#000;margin-top:-30px;padding:0px;" >
+           <div class="container">
+              <ul class="nav nav-pills nav-justified">
            <navigation  reference="#" > <font cls="fa fa-home fa-fw" > </font> Home </navigation>
            <navigation  reference="#services" > <font cls="fa fa-cogs services"></font> Services </navigation>
            <navigation  reference="#products" > <font cls="fa fa-cubes"></font> Products </navigation>
            <navigation  reference="#about-us" > <font cls="fa fa-user-circle-o"></font> Aboutus </navigation>
-           <navigation  reference="#contact-us" > <font cls="fa fa-id-card-o"></font> Contact us </navigation>
+           <navigation  reference="#" > <font cls="fa fa-th-large"></font> Our Blog </navigation>
+           <navigation  reference="#contact-us" > <font cls="fa fa-id-card-o"></font> Contact us </navigation>  
+              </ul>
+          </div>
           </bar>
-
+      <!--    
+  </div>
+ </div>
+-->
             <div  id="carousel-view" class="carousel slide" data-ride="carousel" >
 
                 <ol class="carousel-indicators" >
@@ -166,8 +173,11 @@ We create software and Hardware for both office / Bussiness
             </div>
           </div>
       
-      <div class="card-deck text-center" style="color:#000;margin-top:2rem;">
-          <div class="card text-center" style="width: 20rem;margin:10px 150px 10px 150px;">
+      <div class="row" style="color:#000;margin-top:2rem;">
+        <div class="col-6 col-sm-12" >
+
+        
+          <div class="card text-center" style="">
               <div class="card-body">
                 <h4 class="card-title">Why choose <a href="#" >Vuejs?</a></h4>
                 <p class="card-text" style="padding:20px" >
@@ -181,8 +191,13 @@ We create software and Hardware for both office / Bussiness
                 <a href="#" class="card-link">Frameworks</a>
                 <a href="#" class="card-link">cross-platfrom development</a>
               </div>
+              
+          </div>              
             </div>
-            <div class="card text-center"  style="width: 20rem;margin:10px 150px 10px 150px;">
+            <div class="col-6 col-sm-12">
+
+           
+            <div class="card text-center"  style="">
                 <div class="card-body">
                   <h4 class="card-title">UI/UX </h4>
                   <p class="card-text"style="padding:20px;">
@@ -194,6 +209,7 @@ We create software and Hardware for both office / Bussiness
                   <p class="card-text"><small class="text-muted">Our Community is  getting  Stronger,Everyday</small></p>
                 </div>
               </div>
+               </div>
       </div>
     </div>
     <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -245,12 +261,12 @@ We create software and Hardware for both office / Bussiness
             <div class="card-img-overlay">
               <h1 class="card-title">Products</h1>
           <card-desk>
-              <card title="Embedded" imagesrc="img/raspberry.png" bottom="like node.js and python">
+              <card title="Embedded" imagesrc="img/rasp.svg" bottom="like node.js and python">
                 We work on both Embebbed devices and
                 also provide software integration
                 of any-kind.
            </card>
-           <card title="IOT" imagesrc="img/iot.jpg" bottom="Internet made our life's better">
+           <card title="IOT" imagesrc="img/iot.svg" bottom="Internet made our life's better">
            We combine the  power of internet
             and the hardware and give it
             right back to you at right time.
@@ -308,39 +324,18 @@ We create software and Hardware for both office / Bussiness
                       
                         </div>
                         </div>
-                        <nav-justify>
-                            <item> 
-                              <social icon="twitter"  >
-                               Tweet us !
-                             </social>
-                           </item>
-                            <item>
-                               <social icon="instagram" >
-                                   Insta us !
-                               </social>
-                             </item>
-                             <item>
-                                 <social icon="linkedin" >
-                                     Follow us !
-                                 </social>
-                               </item>
-                               <item>
-                                   <social icon="pinterest" >
-                                       Pin us !
-                                   </social>
-                                 </item>
-                            </nav-justify>
+                     
                       </div>
                 
 
                 </div>
                  
   </div>
-  <div id="comtact-us">
-      <div class="card bg-dark text-white">
-       <img class="card-img "src="img/mtv.jpg" alt="About-us">
-          <div class="card-img-overlay">
+  <div id="contact-us">
+      <div class="card bg-dark text-white"  style="background: linear-gradient(to bottom right,#191919, #252525);">
+         
           <h1 class="card-title">For contact </h1>
+          <div class="card-body text-center text-white" >
               <address>
                 <h3>Eqra viffa tech</h3>
                 <br/>
@@ -349,8 +344,31 @@ We create software and Hardware for both office / Bussiness
                 1st floor lal-bahabur building,
                 <br/>
                 bangalore, 
+                <br/>
+               <font cls="fa fa-phone" > </font>  9442689528
               </address>
-
+              <nav-justify>
+                  <item> 
+                    <social icon="twitter"  >
+                     Tweet us !
+                   </social>
+                 </item>
+                  <item>
+                     <social icon="instagram" >
+                         Insta us !
+                     </social>
+                   </item>
+                   <item>
+                       <social icon="linkedin" >
+                           Follow us !
+                       </social>
+                     </item>
+                     <item>
+                         <social icon="pinterest" >
+                             Pin us !
+                         </social>
+                       </item>
+                  </nav-justify>
           </div>
           </div>
   </div>
@@ -406,7 +424,7 @@ components:{
   'card-center': httpVueLoader('./views/card-center.vue'),
   'bar':{
     props:['styling'],
-    template:'<nav class="nav nav-pills nav-fill"  :style="styling" ><slot></slot> </nav>',
+    template:'<nav class="navbar navbar-inverse"  :style="styling" ><slot></slot> </nav>',
   },
   'social-icon':{
     props:['type'],
