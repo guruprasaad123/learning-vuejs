@@ -4,28 +4,112 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        Material-Eqra
+    </title>
   </head>
 
   <body>
 
-    <div class="comtainer" >
-
-
+    <div id="main" class="container-fluid" >
+            <nav>
+                    <div class="nav-wrapper blue align-right">
+                        <a href="#"  class="brand-logo">Eqra Viffa Tech</a>
+                        <a href="#" data-activates="sidenav" class="button-collapse"><i class="material-icons" >menu</i></a>
+                      <ul id="nav-mobile" class="right blue-text hide-on-med-and-down">
+                         <li><a class=" " href="#"> <i class="left material-icons">home</i> Home</a></li> 
+                         <li><a class="" href="#"><i class="left material-icons">collections_bookmark</i>About us</a></li>
+                         <li><a  class="" href="#"><i class="left material-icons">settings</i> Serives</a></li>
+                         <li><a class="" href="#"><i class="left material-icons">build</i>Products</a></li>
+                         <li><a  class="" href="#"><i class="left material-icons">dashboard</i> Our Blog</a></li>
+                         <li><a class="" href="#"><i class="left material-icons">contacts</i>For Contact</a></li>
+                      </ul>
+                    <ul id="sidenav" class="side-nav"> 
+                            <li><a class=" " href="#"> <i class="left material-icons">home</i> Home</a></li> 
+                            <li><a class="" href="#"><i class="left material-icons">collections_bookmark</i>About us</a></li>
+                            <li><a  class="" href="#"><i class="left material-icons">settings</i> Serives</a></li>
+                            <li><a class="" href="#"><i class="left material-icons">build</i>Products</a></li>
+                            <li><a  class="" href="#"><i class="left material-icons">dashboard</i> Our Blog</a></li>
+                            <li><a class="" href="#"><i class="left material-icons">contacts</i>For Contact</a></li>
+                    </ul>
+                    </div>
+            </nav>
+         
+            <div class="carousel carousel-slider center" data-indicators="true">
+              <div class="carousel-fixed-item  align-center" style="top:50%">
+               <!-- <a class="btn waves-effect black white-text darken-text-5">button</a> -->
+               <div class="left">
+              <a href="#" @click.prevent="prev" class="left "><i class="material-icons white-text waves-effect waves-light left medium" style="border-radius:50%">chevron_left</i></a>  
+              </div>
+              <div class="right">
+                  <a href="prev" @click.prevent="next" class="right "><i style="border-radius:50%" class=" white-text material-icons  waves-effect waves-light right medium">chevron_right</i></a>  
+                  </div>
+              </div>
+              <div class="carousel-item red blue-text" href="#one!">
+                <h2>First Panel</h2>
+                <p class="blue-text">This is your first panel</p>
+              </div>
+              <div class="carousel-item amber blue-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="blue-text">This is your second panel</p>
+              </div>
+              <div class="carousel-item green blue-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="blue-text">This is your third panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="blue-text">This is your fourth panel</p>
+              </div>
+            </div>
+        
+   <!--
+          <div class="carousel carousel-slider" hide-delimiters="true">
+            <a class="carousel-item" href="#one!"><img src="img/model/alessandra.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="img/model/jenner.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/model/kendall.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/model/kpop.jpg"></a>
+          </div>
+          -->
     </div>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="Vue_2.5.3.js"> </script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <script src="./Vue_2.5.3.js"> </script>
     <!--
     <script src="https://unpkg.com/http-vue-loader"></script>
      -->
-    <script src="http-vue-loader.js"></script>
+    <script src="./http-vue-loader.js"></script>
 <script text="text/javascript" >
 
+let vue = new Vue({
+  el:"#main",
+  data:{
+    message:'hello'
+  },
+  mounted()
+  {
+      $('.button-collapse').sideNav();
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+      console.log('mounted');
+  },
+  methods:{
+    next()
+    {
+      
+     ;
+      $('.carousel').carousel('next');
+    },
+    prev()
+    {
+      $('.carousel').carousel('prev');
+    }
+  }
+});
 </script>
 
   </body>
