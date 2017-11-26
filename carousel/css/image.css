@@ -1,0 +1,31 @@
+.slide1 {
+  background-image: url("../img/slides.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.slide2 {
+  background-image: url("../img/gray-pattern.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.slide3 {
+  background-image: url("../img/circle-hand.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.slide4 {
+  background-image: url("../img/hand-arm.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+@media (min-width: 34em) {
+  p {
+    font-weight: 100; } }
+#front-end a, #back-end a {
+  color: #212121; }
+
+span {
+  color: #212121;
+  font-weight: bolder; }
+
+/*# sourceMappingURL=image.css.map */

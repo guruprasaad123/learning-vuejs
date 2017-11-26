@@ -1,0 +1,43 @@
+@mixin set-background($image)
+{
+ background-image: url($image);
+ background-repeat: no-repeat;
+ background-position: center;
+}
+$blue-darken :#1976d2;
+ $teal-darken-4:#004d40;
+ $light-blue:#03a9f4;
+ $grey-darken-4:#212121 ;
+ $indigo-darken-4:#1a237e; 
+.slide1{
+    @include set-background('../img/slides.jpg');
+}
+.slide2{
+    @include set-background('../img/gray-pattern.jpg');
+}
+.slide3{
+    @include set-background('../img/circle-hand.jpg');
+}
+.slide4{
+    @include set-background('../img/hand-arm.jpg');
+}
+
+@media (min-width: 34em)
+{
+    p{
+        font-weight: 100;
+    }
+     
+}
+
+#front-end ,#back-end{
+  a{
+      color:$grey-darken-4;
+  }
+}
+  span{
+        @extend .blue-text, .text-lighten-4 !optional;
+        @extend .bold !optional;
+        color:$grey-darken-4;
+        font-weight: bolder;
+    }

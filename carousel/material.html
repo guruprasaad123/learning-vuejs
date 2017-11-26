@@ -5,12 +5,18 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
-
+    <link type="text/css" rel="stylesheet" href="css/image.css" />
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>
         Material-Eqra
     </title>
+
+    <style text="text/css">
+
+
+      </style>
   </head>
 
   <body>
@@ -23,7 +29,7 @@
                       <ul id="nav-mobile" class="right blue-text hide-on-med-and-down">
                          <li><a class=" " href="#"> <i class="left material-icons">home</i> Home</a></li> 
                          <li><a class="" href="#"><i class="left material-icons">collections_bookmark</i>About us</a></li>
-                         <li><a  class="" href="#"><i class="left material-icons">settings</i> Serives</a></li>
+                         <li><a  class="" href="#"><i class="left material-icons">settings</i> Services</a></li>
                          <li><a class="" href="#"><i class="left material-icons">build</i>Products</a></li>
                          <li><a  class="" href="#"><i class="left material-icons">dashboard</i> Our Blog</a></li>
                          <li><a class="" href="#"><i class="left material-icons">contacts</i>For Contact</a></li>
@@ -31,7 +37,7 @@
                     <ul id="sidenav" class="side-nav"> 
                             <li><a class=" " href="#"> <i class="left material-icons">home</i> Home</a></li> 
                             <li><a class="" href="#"><i class="left material-icons">collections_bookmark</i>About us</a></li>
-                            <li><a  class="" href="#"><i class="left material-icons">settings</i> Serives</a></li>
+                            <li><a  class="" href="#"><i class="left material-icons">settings</i> Services</a></li>
                             <li><a class="" href="#"><i class="left material-icons">build</i>Products</a></li>
                             <li><a  class="" href="#"><i class="left material-icons">dashboard</i> Our Blog</a></li>
                             <li><a class="" href="#"><i class="left material-icons">contacts</i>For Contact</a></li>
@@ -42,31 +48,191 @@
             <div class="carousel carousel-slider center" data-indicators="true">
               <div class="carousel-fixed-item  align-center" style="top:50%">
                <!-- <a class="btn waves-effect black white-text darken-text-5">button</a> -->
+               <!--left Arrow-->
                <div class="left">
-              <a href="#" @click.prevent="prev" class="left "><i class="material-icons white-text waves-effect waves-light left medium" style="border-radius:50%">chevron_left</i></a>  
+              <a href="next" @click.prevent="prev" class="left "><i class="material-icons white-text waves-effect waves-light left medium" style="border-radius:50%">chevron_left</i></a>  
               </div>
+                <!--right Arrow-->
               <div class="right">
-                  <a href="prev" @click.prevent="next" class="right "><i style="border-radius:50%" class=" white-text material-icons  waves-effect waves-light right medium">chevron_right</i></a>  
+              <a href="prev" @click.prevent="next" class="right "><i style="border-radius:50%" class=" white-text material-icons  waves-effect waves-light right medium">chevron_right</i></a>  
                   </div>
               </div>
-              <div class="carousel-item red blue-text" href="#one!">
-                <h2>First Panel</h2>
-                <p class="blue-text">This is your first panel</p>
+
+              <div class="carousel-item slide1 center  red white-text" style=" " href="#one!">
+                
+                  <br/>
+                  <br/>
+                  <h2 >Here we Build Reality </h2>
+                <p class="flow-text"> you can either join us or watch us building</p>
+            
               </div>
-              <div class="carousel-item amber blue-text" href="#two!">
-                <h2>Second Panel</h2>
-                <p class="blue-text">This is your second panel</p>
+              <div class="carousel-item slide2 left background amber white-text" href="#two!">
+                  <br/>
+                  <br/>
+                <h2>Connecting the Dots</h2>
+                <p class="flow-text"> means the humanity where they are set apart</p>
               </div>
-              <div class="carousel-item green blue-text" href="#three!">
-                <h2>Third Panel</h2>
-                <p class="blue-text">This is your third panel</p>
+              <div class="carousel-item slide3 green white-text" href="#three!">
+                <br/>
+                <br/>
+                <h2 class="">Light it Up</h2>
+                <p class=" flow-text">We bring the light back to you</p>
               </div>
-              <div class="carousel-item blue white-text" href="#four!">
-                <h2>Fourth Panel</h2>
-                <p class="blue-text">This is your fourth panel</p>
+              <div class="carousel-item slide4 blue white-text" href="#four!">
+                  <br/>
+                  <br/>
+                <h2> What's not possible</h2>
+                <p class="flow-text"> Here we reinvent that's impossible so far</p>
               </div>
             </div>
         
+<!about-us>
+            <div id="softwares">
+                <h2 class="primary center">About us</h2>
+                <blockquote class="large center">
+                  Start small Start small grow Big
+                </blockquote>
+                <div class="row">
+                  <div class="col l4 offset-l4 s12 m6 ">
+                           <div class="card small">
+
+                            <div class="card-image">
+                              <img src="img/risewithus.jpg" style="background-position: center;background-repeat:no-repeat; " alt="" class="responsive-img">
+                              <span class="card-title bold ">Who are We?</span>
+                            </div>
+                            <div class="card-content">
+                              <p class="condensed light ">
+                                 We are a group of engineers who want to stand out of the crowd and make a Difference.
+                               We got the team of young individuals who seek Innovation and Creativity.
+                              </p>
+                              
+
+                            </div>
+
+                           </div>
+
+                  </div>
+                </div>
+
+            </div>
+            <!services>
+            <div id="services">
+
+              <h2 class="primary center">Services</h2>
+              <div class="row">
+                <div class="col l10 offset-l1 s12">
+                  <div class="card">
+                       <div class="card-content">
+                         <p class="light condensed ">
+                           In this Digital Era , connection is Power and anything is possible for a Great mind ,
+                           if you can make One and there is no waiting because , We are here to create/design what you 
+                           need.And there are many layers where we Work.
+                         </p>
+
+                       </div>
+                       <div class="card-tabs">
+                         <ul class="tabs tabs-fixed-width ">
+                           <li class="tab  "><a class="" href="#front-end">  Frontend</a> </li>
+                           <li class="tab "><a href="#back-end">Backend</a> </li>
+                           <li class="tab"><a href="#datascience-end">DataScience</a> </li>
+                           <li class="tab"><a href="#machine-learning">Machine Learning</a> </li>
+                          </ul>
+                       </div>
+                       <div class="card-content grey">
+                         <! front-end>
+                             <div id="front-end">
+                               <div class="row">
+                                     
+                                <div class="col l6">
+                                          <div class="card teal lighten-1">
+                                 <div class="card-content">
+                                    <h3> Why Vuejs ?</h3>
+                                    <p class="white-text bold">
+                                      We are a big fan of Open-source community and  support open-course softwares/community 
+                                     <a  href="">Vuejs  </a> has wide developers community.The main 
+                                     reason for choosing  Vue is because it is flexible with  <a href=""> React </a>
+                                      and <a href="#"> Angular </a> Framework.Also <a href="#" > Nativescript </a> , which can be used to
+                                      build cross-platform Android and Ios Apps at ease.
+                                    </p>
+                                 </div>
+                                 <div class="card-action">
+                                    <a class="waves waves-effect white-text indigo waves-lighter btn" href="#">Read More</a>
+                                    <a class="waves waves-effect white-text indigo waves-lighter btn" href="#"> Why cross-platform</a>
+                                  </div>
+                                           </div>
+                                </div>
+
+                                <div class="col l6">
+                                    <div class="card teal lighten-1">
+                           <div class="card-content">
+                              <h3> UI/UX </h3>
+                              <p class="white-text bold" >
+                               <span>Never judge a book by its cover </span> it's just a saying but, it doesnot
+                               work in the Real time .Nowsdays to gain more audience you will impress them 
+                               with Looks .We recreate UI/UX designing based on Google's <a href="">Material-design </a>
+                               Creating best user experience for your Audience for both Office/Bussiness.We create 
+                               <span> what's best for you </span>.
+                                </p>
+                           </div>
+                           <div class="card-action">
+                             <a class="waves waves-effect white-text indigo waves-lighter btn" href="#"> Documentation</a>
+                             <a class="waves waves-effect white-text indigo waves-lighter btn" href="#"> Open Demo </a>
+                           </div>
+                                     </div>
+                               </div>
+                            
+                              
+                              </div>
+                             </div>
+                         <!back-end>
+                             <div id="back-end">
+                               <div class="row">
+
+                                  <div class="col l6">
+                                  <div class="card teal lighen-1">
+                                    <div class="card-content">
+                                         <h3> Node.js</h3>
+                                      <p class="white-text bold">
+                                         Javascript has been on the browser , Ever since we have been using the 
+                                         browser .The Good news is javascript is on the servers too.So 
+                                         if you are using any <span> javascript framework </span> as front-end 
+                                         it will be a Great idea to use <span> Nodejs </span> as the back-end.
+                                           </p>
+                                    </div>
+                                    <div class="card-action ">
+                                      <a href="#" class="btn white-text waves-light indigo waves-lighter">Open Docs</a>
+                                    </div>
+                                  </div>
+                                  </div>
+
+                                  <div class="col l6">
+                                      <div class="card teal lighen-1">
+                                    <div class="card-content">
+                                         <h3> Django</h3>
+                                      <p class="white-text bold">
+                                      <a href="#">Python </a> , the Best-Growing Scripting language ,it has been used 
+                                      by Google for developing Open-source  <a href="#">ML framework</a> for Data Scientists/
+                                      AI developers.Python gives more Flexibility more than any other Language/Framework.
+                                      </p>
+                                    </div>
+                                    <div class="card-action ">
+                                      <a href="#" class="btn white-text waves-effect indigo waves-lighter"> Open Docs </a>
+                                    </div>
+                                  </div>
+                                    </div>
+
+                               </div>
+
+                             </div>
+                             <! data-science>
+
+                       </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
    <!--
           <div class="carousel carousel-slider" hide-delimiters="true">
             <a class="carousel-item" href="#one!"><img src="img/model/alessandra.jpg"></a>
@@ -85,7 +251,7 @@
      -->
     <script src="./http-vue-loader.js"></script>
 <script text="text/javascript" >
-
+  
 let vue = new Vue({
   el:"#main",
   data:{
@@ -95,13 +261,12 @@ let vue = new Vue({
   {
       $('.button-collapse').sideNav();
       $('.carousel.carousel-slider').carousel({fullWidth: true});
-      console.log('mounted');
+      $('.carousel').carousel({ padding: 200,duration:2500   });
+      setInterval( function(){$('.carousel').carousel('next');},7000);
   },
   methods:{
     next()
     {
-      
-     ;
       $('.carousel').carousel('next');
     },
     prev()
