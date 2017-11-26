@@ -21,7 +21,7 @@
 @media (min-width: 34em) {
   p {
     font-weight: 100; } }
-#front-end a, #back-end a {
+#front-end a, #back-end a, #machine-learning a {
   color: #212121; }
 
 span {
