@@ -1,3 +1,4 @@
+@import url(materialize.css);
 .slide1 {
   background-image: url("../img/slides.jpg");
   background-repeat: no-repeat;
@@ -18,14 +19,10 @@
   background-repeat: no-repeat;
   background-position: center; }
 
-@media (min-width: 34em) {
-  p {
-    font-weight: 100; } }
 #front-end a, #back-end a, #machine-learning a {
-  color: #212121; }
+  color: #1a237e; }
 
 span {
-  color: #212121;
   font-weight: bolder; }
 
 /*# sourceMappingURL=image.css.map */
