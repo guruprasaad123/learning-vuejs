@@ -1,4 +1,4 @@
-@import "materialize.css";
+
 @mixin set-background($image)
 {
  background-image: url($image);
@@ -22,7 +22,13 @@ $blue-darken :#1976d2;
 .slide4{
     @include set-background('../img/hand-arm.jpg');
 }
+#connect-with-us {
 
+    li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+}
 
 
 #front-end ,#back-end ,#machine-learning{
@@ -32,9 +38,12 @@ $blue-darken :#1976d2;
   p{
 
   }
-}
   span{
 
       
         font-weight: bolder;
     }
+}
+  #for-contact{
+   
+  }
