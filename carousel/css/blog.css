@@ -1,0 +1,9 @@
+.blogs {
+  background-image: url("../img/red-blue-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.card-content {
+  height: inherit; }
+
+/*# sourceMappingURL=blog.css.map */

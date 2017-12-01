@@ -1,0 +1,97 @@
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+      <link rel="stylesheet" href="materialize-social.css">
+      <link rel="stylesheet" href="css/blog.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+    Blog - EqraViffa
+    </title>
+    <style text="text/css">
+             #home:hover::after{
+                 content: 'home'
+             }
+
+      </style>
+  </head>
+
+  <body>
+<div id="main" class="container-fluid">
+    
+<header>
+    <div class="navbar-fixed">  
+    <nav>
+       <div class="nav-wrapper align-right pink accent-3">
+      <a href="" class="brand-logo left"><i class="material-icons large left">public</i>Our Blog</a>
+       
+
+       <ul class="nav-mobile right">
+         <li>   <a href="material.html" class="btn-flat  white blue-text waves-effect waves-light"> <i  class="material-icons left">home</i> <span class='hide-on-small-and-down'>Back to Home </span></a></li>  
+       </ul>
+     </div>
+    </nav>
+  </div>
+</header>
+        <div class="parallax-container">
+                <div class="parallax"><img src="img/night-love.jpg"></div>
+              </div>
+              <div class="section white">
+                <div class="container">   
+                <div class="row ">
+                  <h2 class="header">Welcome to our Blog</h2>
+                  <p class=" flow-text grey-text text-darken-3 lighten-3">
+                    You are going to read about our recent products Releases and 
+                     Our future upcoming products too.So you have a reason to be excited.
+                    </p>
+                  </div>
+
+                  
+              <div class="blogs">
+                  <div class="card transparent ">
+                  <span class="card-title bold white-text">
+                      <h1 class="">Expo </h1>
+                  </span>
+                     <div class="card-content transparent grey-text text-darken-4 z-depth-4">
+                        <p class="grey-text darken-5">
+                         Here's Our First Product Expo , and Everything 
+                         that you need to know is....
+                        </p>
+                    </div>
+                     
+                  </div>
+ 
+               </div>
+                 </div>
+              </div>
+          
+
+</div> 
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script src="Vue_2.5.3.js"> </script>
+<!--
+<script src="https://unpkg.com/http-vue-loader"></script>
+ -->
+<script src="http-vue-loader.js"></script>
+<script text="text/javascript">
+let vue = new Vue({
+    el:"#main",
+    mounted()
+    {
+        console.log('mounted');
+        $(document).ready(function(){
+      $('.parallax').parallax();
+       });
+     }
+});
+</script>
+  </body>
+  
+  </html>
