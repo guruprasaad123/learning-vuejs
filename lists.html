@@ -57,6 +57,10 @@
             border:  2px solid #1A237E;
             border-spacing: 10px;
         }
+        p{
+            
+            font-weight:bolder;
+        }
 
     </style>
 </head>
@@ -64,8 +68,9 @@
 <div id="lists">
 
     <h1>{{header}}</h1>
-    <input v-model="input" id="input" type="text"  >
 
+    <input  v-model="input" id="input" :onkeyup="keyup()" type="text"  >
+      <p v-html="status"></p>
     <div id="names">
         <ul placeholder="Empty" >
         <li v-for="name in computed_list" >{{name.name}} </li>
@@ -80,6 +85,7 @@
             search:false,
             header:'Lists',
             input:'',
+            status:'',
             names:[
                 {name:'Guruprasaad',company:'google'},
                 {name:'dilep',company:'unisoft'},
@@ -87,30 +93,30 @@
                 {name:'santhosh',company:'manipal'},
                 {name:'kishore',company:'datascience'}
             ],
-        },computed:{
+        },
+        watch:{
+            input:function(newinput,oldvalue){
+               this.status='Typing ...';
+               console.log('old value ...'+oldvalue);
+            }
+        }
+        ,
+        computed:{
             computed_list(){
                 if(this.input==='')
                     return this.names;
                 console.log('computing...');
-
-              /*  let arr = [];
-                   for(name_list of this.names)
-                   {
-                       if(name_list.name.includes(this.input))
-                       {
-                           arr.push(name_list);
-                           console.log(name_list.name);
-                       }
-                   }
-              return arr;*/
-return this.names.filter((values)=> values.name.startsWith(this.input));
+                
+         return this.names.filter((values)=> values.name.startsWith(this.input));
 
             }
         },
         methods:{
-
-
+        keyup(){
+            this.status=(this.status==='Typing ...') ?'':'Continue to Type..';
+        }
         },
+        
         mounted(){
             this.header='shortlisted'
         }
