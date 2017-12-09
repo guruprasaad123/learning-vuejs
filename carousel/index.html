@@ -1,451 +1,644 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Eqra Viffa Tech</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="bootstrap-social.css" >
-<style text="text/css">
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+      <link rel="stylesheet" href="materialize-social.css">
+      <link rel="stylesheet" href="css/image.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Icons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <title>
+      Eqra Vifaa Tech
+    </title>
 
- .carousel-inner  {
-font-family: sans-serif;
+    <style text="text/css">
 
-}
 
-#card-id span{
-  color:gray;
-  font-weight:bolder;
-}
-#tabs span
-{
-  color:gray;
-font-weight:bolder;
-}
-#card-id{
-  color:black;
-  text-align: center;
-  padding:10px 10px;
-  margin:10px auto;
-}
-    </style>
+      </style>
+  </head>
 
-</head>
   <body>
 
-    <div id="container" style="width:100%;margin:0px auto" >
-      <!jumbotron>
+    <div id="main" class="container-fluid" >
+       
+            <header >
+                    <div class="navbar-fixed" style="height:75px;" >
+                    <nav >
+                    <div class="nav-wrapper   align-right" style="background-color:#283593;height:75px;" >
+                    <!--    <a href="#"  class="brand-logo">Eqra Vifaa <span class="hide-on-small-and-down">Tech </span></a>-->
+                   
+                    <img  src="./img/logo.png" class="hide-on-med-and-down" alt="logo" style="height:inherit;width:inherit;" ></img>
+                    <img src="./img/icon.png" class="hide-on-large-only" style="height:95%;width:80%;" alt="Logo">
+                    <a  href="#" data-activates="sidenav"  class="button-collapse left"><i class="material-icons waves-effect waves-indigo medium">menu</i></a>
+                      <ul id="nav-mobile"   class="right blue-text hide-on-med-and-down">
+                         <li><a class=" " href="#"> <i class="left material-icons">home</i> Home</a></li>
+                         <li><a class="" href="#about-us"><i class="left material-icons">collections_bookmark</i>About us</a></li>
+                         <li><a  class="" href="#services"><i class="left material-icons">settings</i> Services</a></li>
+                         <li><a class="" href="#products"><i class="left material-icons">build</i>Products</a></li>
+                         <li><a  class="ext" href="./blog.html"><i class="left material-icons">dashboard</i> Our Blog</a></li>
+                         <li><a class="" href="#for-contact"><i class="left material-icons">contacts</i>For Contact</a></li>
+                      </ul>
+               
+                    </div>
+            </nav>
+               </div>
+               </header>
+               <ul id="sidenav" class="side-nav">
+                <li><a class=" " href="#"> <i class="left material-icons">home</i> Home</a></li>
+                <li><a class="" href="#about-us"><i class="left material-icons">collections_bookmark</i>About us</a></li>
+                <li><a  class="" href="#services"><i class="left material-icons">settings</i> Services</a></li>
+                <li><a class="" href="#products"><i class="left material-icons">build</i>Products</a></li>
+                <li><a  class="ext" href="/blog.html"><i class="left material-icons">dashboard</i> Our Blog</a></li>
+                <li><a class="" href="#for-contact"><i class="left material-icons">contacts</i>For Contact</a></li>
+        </ul>
+            <div class="carousel carousel-slider center" data-indicators="true" style="height:80vh;">
+              <div class="carousel-fixed-item  align-center" style="top:50%">
+               <!-- <a class="btn waves-effect black white-text darken-text-5">button</a> -->
+               <!--left Arrow-->
+               <div class="left">
+              <a href="next" @click.prevent="prev" class="left hide-on-med-and-down"><i class="material-icons white-text waves-effect waves-light left medium" style="border-radius:50%">chevron_left</i></a>
+              </div>
+                <!--right Arrow-->
+              <div class="right">
+              <a href="prev" @click.prevent="next" class="right hide-on-med-and-down"><i style="border-radius:50%" class=" white-text material-icons  waves-effect waves-light right medium">chevron_right</i></a>
+                  </div>
+              </div>
 
-<!navigation>
-<!--
-<div class="row">
-  <div class="col-12 col-sm-12">
-    -->
-    <header>
-<div class="navbar-fixed">
+              <div class="carousel-item slide1 center  red white-text" style=" " href="#one!">
+                  <h2 >Here we Build Reality </h2>
+                <p class="flow-text"> you can either join us or watch us building</p>
 
+              </div>
+              <div class="carousel-item slide2 left background amber white-text" href="#two!">
+              
+                <h2>Connecting the Dots</h2>
+                <p class="flow-text"> Means the humanity where they are set apart</p>
+              </div>
+              <div class="carousel-item slide3 green white-text" href="#three!">
+             
+                <h2 class="">Light it Up</h2>
+                <p class=" flow-text">We bring the light back to you</p>
+              </div>
+              <div class="carousel-item slide4 blue white-text" href="#four!">
+                
+                <h2> What's not possible</h2>
+                <p class="flow-text"> Here we reinvent that's impossible so far</p>
+              </div>
+            </div>
 
-         <bar   styling="padding:0px;" >
+<!about-us>
+            <div id="about-us">
+                <h2 class="primary center">About us</h2>
+             
+                <div class="row">
+                  <div class="col l4 offset-l2 s12 m6 offset-m3 ">
+                           <div class="card small">
 
-              <ul class="nav nav-pills nav-justified">
-           <navigation  reference="#" > <font cls="fa fa-home fa-fw" > </font> Home </navigation>
-           <navigation  reference="#about-us" > <font cls="fa fa-user-circle-o"></font> Aboutus </navigation>
-           <navigation  reference="#services" > <font cls="fa fa-cogs services"></font> Services </navigation>
-           <navigation  reference="#products" > <font cls="fa fa-cubes"></font> Products </navigation>
-           <navigation  reference="#" > <font cls="fa fa-th-large"></font> Our Blog </navigation>
-           <navigation  reference="#contact-us" > <font cls="fa fa-id-card-o"></font> Contact us </navigation>
-              </ul>
-          </bar>
-        </div>
-        </header>
-              <!--
-  </div>
- </div>
--->
-            <div  id="carousel-view" class="carousel slide" data-ride="carousel" >
-
-                <ol class="carousel-indicators" >
-            <li  data-target="#carousel-view" data-slide-to="0" class="active" > </li>
-            <li  data-target="#carousel-view" data-slide-to="1" > </li>
-            <li  data-target="#carousel-view" data-slide-to="2" > </li>
-            <li  data-target="#carousel-view" data-slide-to="3" > </li>
-        </ol>
-
-<!carousel>
-            <div class="carousel-inner" role="listbox" >
-
-                <div class="carousel-item active" >
-                    <div class="img">
-                   <img class="d-block img-fluid" src="img/slides.jpg" alt="slides" >
+                            <div class="card-image">
+                              <img src="img/risewithus.jpg" style="background-position: center;background-repeat:no-repeat; " alt="" class="responsive-img">
+                              <span class="card-title bold ">Who are We?</span>
+                            </div>
+                            <div class="card-content">
+                              <p class="condensed light ">
+                                 We are a group of engineers who want to stand out of the crowd and make a Difference.
+                               We got the team of young individuals who seek Innovation and Creativity.
+                              </p>
+                            </div>
+                           </div>
                    </div>
-
-                   <div class="carousel-caption d-none d-md-block">
-                <h1> Here we Build Reality </h1>
-                <p > you can either join us or watch us building </p>
-                </div>
-              </div>
-
-              <div class="carousel-item" >
-                <div class="img">
-                <img  class="d-block img-fluid" src="img/gray-pattern.jpg" alt="pattern" >
-                </div>
-
-                <div class="carousel-caption d-none d-md-block">
-                            <h1> Connecting the Dots</h1>
-                            <p > means the humanity where they are set apart</p>
+                 <div class="col l4  s12 m6 offset-m3">
+                    <div class="card small">
+                      <span class="card-title">What We Believe ?</span>
+                         <div class="card-content">
+                         <i class="fa fa-quote-left fa-3x fa-pull-left fa-border  blue-text" aria-hidden="true"></i>
+                        <p class="flow-text grey-text darken-4">  
+                          <br><br>
+                        Start Small , Start Now , Grow Big.
+                        
+                         </p> 
+                           <i class="fa fa-quote-right fa-3x fa-pull-right fa-border  blue-text" aria-hidden="true"></i>
+                         </div>
                     </div>
-               </div>
-
-              <div class="carousel-item" >
-                <div class="img">
-                  <img  class="d-block img-fluid" src="img/circle-hand.jpg" alt="circle-hand" >
-                </div>
-
-                    <div class="carousel-caption d-none d-md-block">
-                            <h1>Light it Up</h1>
-                            <p > We bring the light back to you</p>
-                    </div>
-               </div>
-
-              <div class="carousel-item" >
-                  <div class="img">
-                    <img  class="d-block img-fluid" src="img/hand-arm.jpg" alt="hand-arm" >
-                    </div>
-
-                    <div class="carousel-caption d-none d-md-block">
-                            <h1>What's not possible</h1>
-                            <p > Here we reinvent that's impossible so far</p>
-                    </div>
-               </div>
+                 </div>
+                  </div>
 
             </div>
+            <!services>
+            <div id="services">
 
-            <a class="carousel-control-prev" href="#carousel-view" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-view" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-    </div>
-
-    <!services>
-   <div id="services" >
-      <div class="card bg-dark text-white" >
-          <img class="card-img" src="img/night-love.jpg" alt="Card image">
-          <div class="card-img-overlay">
-            <h1 class="card-title">Software Services</h1>
-            <p class="card-text">We take care of your software so you can leave it us and Sit back and relax</p>
-           <!card-columns>
-         <!-- Nav tabs
-
-        -->
-<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active"  id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><font cls="fa fa-mobile"></font>  Front-end</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><font cls="fa fa-server"></font> backend</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false"> <font cls="fa fa-database"></font> Datascience/Analytics</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false"> <font cls="fa fa-desktop"></font> Machine Learning</a>
-    </li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content" id="tabs" style="color:#000">
-    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <div class="card text-center">
-            <div class="card-header">
-              <h3>
-             Quote of the Day
-              </h3>
-            </div>
-            <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>If you have it done for Good ,just make it Look Good.</p>
-                <footer class="blockquote-footer">~ <cite title="Source Title">Bill Gates</cite></footer>
-              </blockquote>
-            </div>
-          </div>
-      <!row start>
-      <div class="row" style="color:#000;margin-top:2rem;">
-        <div class="col-lg-6 col-sm-12 " >
-
-
-          <div class="card text-center" style="">
-              <div class="card-body">
-                <h4 class="card-title">Why choose <a href="#" >Vuejs?</a></h4>
-                <p class="card-text" style="padding:20px" >
-                  A progressive<span> javascript framework </span>,which gives reactivity to users interaction.
-                  you can also use <a href="#">Angular</a> and <a href="#">React</a> with<span> Vue</span> ,which makes it way more awesome.
-                       Visit a Quick walkthought about <a href="#"> vuejs Guide. </a>
-                       Vuejs is compatible with <span>Nativescript </span>,which can
-                        be used to build apps for  <font cls="fa fa-android"> </font> <span> Android </span>
-                         and  <font cls="fa fa-mobile"> </font> <span>ios</span>
-                </p>
-                <a href="#" class="card-link">Frameworks</a>
-                <a href="#" class="card-link">cross-platfrom development</a>
-              </div>
-
-          </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 ">
-
-
-            <div class="card text-center"  style="">
-                <div class="card-body">
-                  <h4 class="card-title">UI/UX </h4>
-                  <p class="card-text"style="padding:20px;">
-                    Most of the mobile users are<span> Android</span> and <span>Apple</span>'s Iphone users ,
-                    So We build app's<a href="#"> front-end </a> with their own <span> native programming
-                      </span> language ,so
-                    that   <span> native developers</span> can benefit .
-                  </p>
-                  <p class="card-text"><small class="text-muted">Our Community is  getting  Stronger,Everyday</small></p>
-                </div>
-              </div>
-               </div>
-      </div>
-      <!row end>
-    </div>
-    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="card" style='color:black'>
-            <h4 class="card-header">Featured</h4>
-            <div class="card-body">
-              <h4 class="card-title">Special title treatment</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </div>
-    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-        <div class="card text-center" style='color:black'>
-            <h4 class="card-header">
-              Featured
-            </h4>
-            <div class="card-body">
-              <h4 class="card-title">Special title treatment</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </div>
-    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-        <div class="card" style='color:black'>
-            <h4 class="card-header">
-              Featured
-            </h4>
-            <div class="card-body">
-              <h4 class="card-title">Special title treatment</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a class="btn  btn-social btn-twitter btn-primary" href="#">
-                  <span class="fa fa-twitter"></span> Sign in with Twitter
-                </a>
-            </div>
-          </div>
-    </div>
-  </div>
-
-          </div>
-        </div>
-
-    </div>
-   <!products >
-    <div id="products" >
-        <div class="card bg-dark text-white" >
-            <img class="card-img" src="img/blur-hor.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h1 class="card-title">Products</h1>
-          <card-desk>
-              <card title="Embedded" imagesrc="img/rasp.svg" bottom="like node.js and python">
-                We work on both Embebbed devices and
-                also provide software integration
-                of any-kind.
-           </card>
-           <card title="IOT" imagesrc="img/iot.svg" bottom="Internet made our life's better">
-           We combine the  power of internet
-            and the hardware and give it
-            right back to you at right time.
-       </card>
-       <card title="Smart Appliances" imagesrc="img/smart-home.png" bottom="building smart cities are easy">
-        We can really make your home more safer
-        and better by making to it more smarter than
-        it was .
-   </card>
-   <card title="Automation" imagesrc="img/business.png" bottom="we can handle any business">
-    Nowadays , business is getting hardware
-    so here we'll make it easy for you.
-    you can count on us.
-</card>
-           </card-desk>
-            </div>
-          </div>
-  </div>
-  <!About-us >
-  <div id="about-us">
-                <div class="card bg-dark text-white">
-                 <img class="card-img "src="img/mtv.jpg" alt="About-us">
-                    <div class="card-img-overlay">
-                    <h1 class="card-title">About us </h1>
-                    <div class="card text-center"style=" width:20rem;margin:0px auto;">
-                        <img class="card-img-top" src="img/bob-marley.jpg" style="height:inherit;width:inherit;margin:0px auto;" alt="bob-marley">
-                        <div class="card-body" >
-                          <p class="card-text" id="card-id"  >
-                       We are a Group of engineers who believed in <span>creativity , Innovation.</span>
-                       Above All we seek <span>Innovation</span>
+              <h2 class="primary center">Software Services</h2>
+              <div class="row">
+                <div class="col l10 offset-l1 s12">
+                  <div class="card ">
+                       <div class="card-content">
+                         <p class="flow-text">
+                           In this Digital Era , connection is Power and anything is possible for a Great mind ,
+                           if you can make One and there is no waiting because , We are here to create/design what you
+                           need.And there are many layers where we work.
                          </p>
-                         <a href="#" class="btn  btn-primary">who are We&nbsp;<i class="fa fa-question fa-lg" aria-hidden="true"></i></a>
 
-                         <nav-justify style="width:inherit;margin:0px auto;margin-top:20px;">
-                         <item styling="margin:0px auto;" >
-                                   <social-icon type="twitter"></social-icon>
-                         </item>
-                         <item styling="margin:0px auto;" >
-                            <social-icon type="pinterest"></social-icon>
-                         </item>
-                         <item styling="margin:0px auto;" >
-                            <social-icon type="instagram"></social-icon>
-                          </item>
-                          <item styling="margin:0px auto;" >
-                              <social-icon type="linkedin"></social-icon>
-                            </item>
-                          <item styling="margin:0px auto;" >
-                                <social-icon type="facebook"></social-icon>
-                          </item>
-                          <item styling="margin:0px auto;">
-                                  <social-icon type="github"></social-icon>
-                          </item>
+                       </div>
+                       <div class="card-tabs">
+                         <ul class="tabs tabs-fixed-width ">
+                           <li class="tab  "><a   href="#front-end">  Frontend</a> </li>
+                           <li class="tab "><a href="#back-end">Backend</a> </li>
+                           <li class="tab"><a href="#data-science">DataScience</a> </li>
+                           <li class="tab"><a href="#machine-learning">Machine Learning</a> </li>
+                          </ul>
+                       </div>
+                       <div class="card-content grey">
+                         <! front-end>
+                             <div id="front-end">
+                               <div class="row">
 
-                       </nav-justify>
+                                <div class="col l6">
+                                          <div class="card teal lighten-1">
+                                 <div class="card-content">
+                                    <h3> Why Vuejs ?</h3>
+                                    <p class="white-text bold">
+                                      We are a big fan of Open-source community and  support open-course softwares/community
+                                     <a  class="ext" href="https://vuejs.org/"  >Vuejs  </a> has wide developers community.The main
+                                     reason for choosing  Vue is because it is flexible with  <a  class="ext" href="https://reactjs.org/"> React </a>
+                                      and <a  class="ext" href="https://angularjs.org/"> Angular </a> Framework.Also <a  class="ext" href="https://www.nativescript.org/" > Nativescript </a> , which can be used to
+                                      build cross-platform Android and Ios Apps at ease.
+                                    </p>
+                                 </div>
+                                 <div class="card-action">
+                                    <a class="waves waves-effect white-text indigo waves-light btn ext" href="https://www.nativescript.org/blog/a-new-vue-for-nativescript"><i class="material-icons left">assignment</i>Read More</a>
+                                    <a class="waves waves-effect white-text indigo waves-light btn ext" href="https://www.nativescript.org/showcases"><i class="material-icons left">smartphone</i> Why cross-platform</a>
+                                  </div>
+                                           </div>
+                                </div>
 
-                        </div>
-                        </div>
+                                <div class="col l6">
+                                    <div class="card teal lighten-1">
+                           <div class="card-content">
+                              <h3> UI/UX </h3>
+                              <p class="white-text bold" >
+                               <span>Never judge a book by its cover </span> it's just a saying but, it doesnot
+                               work in the Real time .Nowsdays to gain more audience you will impress them
+                               with Looks .We recreate UI/UX designing based on Google's <a  class="ext" href="https://material.io/">Material-design </a>
+                               Creating best user experience for your Audience for both Office/Bussiness.We create
+                               <span> what's best for you </span>.
+                                </p>
+                           </div>
+                           <div class="card-action">
+                             <a class="waves waves-effect white-text indigo waves-light btn ext" href="https://material.io/guidelines/"><i class="material-icons left">assignment</i> Documentation</a>
+                             <a class="waves waves-effect white-text indigo waves-light btn ext" href="https://www.youtube.com/watch?v=Q8TXgCzxEnw"> <i class="material-icons left">web</i>Open Demo </a>
+                           </div>
+                                     </div>
+                               </div>
 
-                      </div>
 
+                              </div>
+                             </div>
+                         <!back-end>
+                             <div id="back-end">
+                               <div class="row">
 
+                                  <div class="col l6">
+                                  <div class="card teal lighten-1">
+                                    <div class="card-content">
+                                         <h3> Node.js</h3>
+                                      <p class="white-text bold">
+                                         Javascript has been on the browser , Ever since we have been using the
+                                         browser .The Good news is javascript is on the servers too.So
+                                         if you are using any <span> javascript framework </span> as front-end
+                                         it will be a Great idea to use <a  class="ext" href="https://nodejs.org/en/"> Nodejs </a> as the back-end.
+                                           </p>
+                                    </div>
+                                    <div class="card-action ">
+                                      <a href="https://nodejs.org/en/docs/" class="btn white-text waves-light indigo waves-light ext"><i class="material-icons left">assignment</i>Open Docs</a>
+                                    </div>
+                                  </div>
+                                  </div>
+
+                                  <div class="col l6">
+                                      <div class="card teal lighten-1">
+                                    <div class="card-content">
+                                         <h3> Django</h3>
+                                      <p class="white-text bold">
+                                      <a  class="ext" href="https://www.python.org">Python </a> , the Best-Growing Scripting language ,it has been used
+                                      by Google for developing Open-source  <a  class="ext" href="https://www.tensorflow.org/">ML framework</a> for Data Scientists/
+                                      AI developers.Python gives more Flexibility more than any other Language/Framework.Thank
+                                      you <span> Django team </span> ,for taking Python to the Web,<a   class="ext" href="https://www.djangoproject.com/">Django</a>
+                                      </p>
+                                    </div>
+                                    <div class="card-action ">
+                                      <a href="https://docs.djangoproject.com/en/2.0/" class="btn white-text waves-effect indigo waves-light ext "><i class="material-icons left">assignment</i> Open Docs </a>
+                                    </div>
+                                  </div>
+                                    </div>
+
+                               </div>
+
+                             </div>
+                          
+                             <!data-science>
+                                      <div id="data-science">
+                                      <div class="row">
+                                          <div class="col l6  ">
+                                               <div class="card teal lighten-1">
+                                             
+                                                    <div class="card-content">
+                                                      <h3> Hadoop </h3>
+                                                      <p class="white-text bold">
+                            <blockquote class="white-text">Information is  knowledge and Information has its own cost  </blockquote>
+                         
+                         <p class="white-text">   Once,<span> Big Data </span> was limited to only <span>Big Corporations </span>.But , Nowadays  Scenario's changed
+                           ,Because Most of the <span>Corparations/Institutions </span> and Even <span>Startups </span> uses Big Data.Well 
+                           ,We <span> analyse </span> your Data for you and Give the <span> Results  </span>back to you.Your Data wil be Safe with us.  </p>
+                                                      </p>
+                                                    </div>
+                                                    <div class="card-action">
+                                                      <a  href="http://hadoop.apache.org/#Who+Uses+Hadoop%3F" 
+                                                      class="ext btn white-text waves-effect waves-ligher indigo">
+                                                      <i class="material-icons left">description</i>who use Hadoop?</a>
+                                                    </div>
+                                                </div>
+                                          </div>
+                                                       <div class="col l6">
+                                                         <div class="card  teal lighten-1"> 
+                                                         <div class="card-content">
+                                                           <h3 >Qlik</h3>
+                                                           <p class="white-text">
+                                                    Are you migrating to <a class="ext" href="https://en.wikipedia.org/wiki/Business_intelligence">Business Intelligence </a>  ?
+                                                    We provide you support.Combining Both <span>Virtualization</span> and <span>Data-Analysis</span> at the same time
+                                                  Decision making is narrowed for you So , Ease yourself when you facing tough Decision making Situations.Because ,
+                                                  we got you covered. See for yourself , if your Business needs an Upgrade or Not.                                                        
+                                                         </p> 
+                                                        </div>
+                                                        <div class="card-action">
+                                                          <a href="https://www.qlik.com/us/products/why-qlik-is-different"
+                                                           class="ext btn waves-effect indigo waves-light white-text">
+                                                           <i class="material-icons left">compare</i>How is it Different</a>
+
+                                                          <a href="https://www.qlik.com/us/" class="btn waves-effect indigo ext waves-light white-text">
+                                                            <i class="material-icons left">find_in_page</i> What's Qlik</a>
+
+                                                        </div>
+                                                        </div>
+                                                       </div>
+
+                                        
+                                      </div>  
+                                      </div>                             
+                             <!machine-learning>
+
+                             <div id="machine-learning">
+                                <div class="row">
+                                  <div class="col l4 offset-l4 small">
+                                           <div class="card  teal lighten-1">
+                                             <div class="card-image">
+                                               <img src="img/tensorflow.jpg" alt="" class="responsive-img">
+                                             </div>
+                                            <div class="card-content ">
+                                                   <p class="white-text bold">
+                                                 Announcing , <a href="https://www.tensorflow.org/mobile/tflite/">tensorflow lite</a> for Mobile and Embedded
+                                                  Devices.This is happy news for tensorflow lovers.With
+                                                  <span>Machine Learning</span> Natural Language processing is made easy
+                                                  and We can make predictions which made it more suitable for many
+                                                   e-commerce , e-banking domains.
+                                                   </p>
+                                            </div>
+                                            <div class="card-action">
+                                              <a href="https://www.tensorflow.org/mobile/tflite/" target="_blank" class="btn white-text waves-effect waves-light indigo "> <i class="material-icons left">assignment</i> Open Docs</a>
+                                            </div>
+                                           </div>
+                                  </div>
+                                </div>
+                             </div>
+
+                       </div>
+                       
+                  </div>
                 </div>
+                <div class="col l12 m12 s12">
+                    <h3 class="center"> Other Services </h3> 
+                </div>
+              
+             <div class="col l10 m12 offset-l1 hide-on-med-and-down">
+              <div id="printing" class="card teal lighten-1 horizontal"> 
+                <div class="card-image ">
+                  <img  src="img/3d_animal.jpg" alt="3d Animal">
+                </div>
+                <div class="card-stacked">
+                   <div class="card-content">
+                    <h4> 3D Printing </h4>
+                    
+                    <p class="white-text "> 
+                     Having an <span>Idea</span>, having a hard figuring out, whether it works or Not.
+                     Why not <span>Visualize </span> it and then see because, It's best if you see it.
+                     Turn any digital file/model into a <span>three-dimentional-object </span>, Its really as simple as that.
+                     Almost sounds like Building <span>Reality  </span>, Exactly that's what we do here.
+                    </p>
+                   </div>
+                   <div class="card-action">
+                     <a href="https://en.wikipedia.org/wiki/3D_printing" class=" ext btn small waves-effect waves-light indigo white-text"><i class="material-icons left">assignment</i>Learn more</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            
+             <div class="col s10 offset-s1 m8 offset-m2 hide-on-large-only">
+               <div class="card teal lighten-1">
+                 <div class="card-image">
+                  <img  src="img/3d_animal.jpg" alt="3d Animal">
+                 </div>
+                <div class="card-content">
+                  <h4> 3D Printing </h4>
+                  
+                  <p class="white-text "> 
+                   Having an <span>Idea</span>, having a hard figuring out, whether it works or Not.
+                   Why not <span>Visualize </span> it and then see because, It's best if you see it.
+                   Turn any digital file/model into a <span>three-dimentional-object </span>, Its really as simple as that.
+                   Almost sounds like Building <span>Reality  </span>, Exactly that's what we do here.
+                  </p>
+                  <div class="card-action">
+                    <a href="https://en.wikipedia.org/wiki/3D_printing" class=" ext btn small waves-effect waves-light indigo white-text"><i class="material-icons left">assignment</i>Learn more</a>
+                  </div>
+                </div>
+               </div>
+             </div>
+              </div>
+            </div>
+            <!products>
+            <div id="products">
+                        <h2 class="center">Our Products</h2>
+                        <div class="row  ">
+                          <div class="col  l3 m6 ">
+                           <div class="card medium">
+                                 <div class="card-image">
+                                   <img src="img/hardware.jpg" alt="" class="responsive-img">
 
-  </div>
-  
-  <div id="contact-us">
-      <div class="card bg-dark text-white"  style="background: linear-gradient(to bottom right,#191919, #252525);">
+                                 </div>
+                                 <div class="card-content">
+                                    <span class="card-title teal-text">Hardware Products </span>
+                                   <p>
+                                        We work on both Embebbed devices and
+                                  also provide software integration
+                                  of any-kind.
+                                   </p>
 
-          <h1 class="card-title">For contact </h1>
-          <div class="card-body text-center text-white" >
-              <address>
-                <h3>Eqra viffa tech</h3>
-                <br/>
-                1445,5th Avenue,
-                <br/>
-                1st floor lal-bahabur building,
-                <br/>
-                bangalore,
-                <br/>
-               <font cls="fa fa-phone" > </font>  9442689528
-              </address>
-              <nav-justify>
-                  <item>
-                    <social icon="twitter"  >
-                     Tweet us !
-                   </social>
-                 </item>
-                  <item>
-                     <social icon="instagram" >
-                         Insta us !
-                     </social>
-                   </item>
-                   <item>
-                       <social icon="linkedin" >
-                           Follow us !
-                       </social>
-                     </item>
-                     <item>
-                         <social icon="pinterest" >
-                             Pin us !
-                         </social>
-                       </item>
-                  </nav-justify>
+                                 </div>
+                           </div>
+                          </div>
+
+                          <div class="col  l3 m6 ">
+                            <div class="card medium">
+                                  <div class="card-image">
+                                    <img src="img/iot_dark.jpg" alt="" class="responsive-img">
+                                  </div>
+                                  <div class="card-content">
+                                      <span class="card-title teal-text">IOT</span>
+                                    <p>
+                                          We combine the  power of internet
+                                    and the hardware and give it
+                                    right back to you at right time.
+                                    </p>
+
+                                  </div>
+                            </div>
+                           </div>
+                           <div class="col  l3 m6">
+                            <div class="card medium">
+                                  <div class="card-image">
+                                    <img src="img/smart-home.png" alt="" class="responsive-img">
+                                  </div>
+                                  <div class="card-content">
+                                      <span class="card-title teal-text">Smart Appliances </span>
+                                    <p>
+                                              We can really make your home more safer
+                                    and better by making to it more smarter than
+                                    it was.
+                                    </p>
+
+                                  </div>
+                            </div>
+                           </div>
+                           <div class="col  l3 m6">
+                            <div class="card medium ">
+                                  <div class="card-image">
+                                    <img src="img/deepmind.png" alt="" class="responsive-img">
+                                  </div>
+                                  <div class="card-content">
+                                      <span class="card-title teal-text">Automation </span>
+                                    <p >
+                                    Automation has reached its Peak. It's not like replacing a Bot instead
+                                    of a Man. We create Automation for both <span>Home/ Office/ Industry.</span>
+                                    </p>
+
+                                  </div>
+                            </div>
+                           </div>
+                        </div>
+
+
+            </div>
+
+            <!for-contact >
+
+            <div id="for-contact">
+               <h2 class="center">  For Contact</h2>
+                <div class="container">
+               <div class="row">
+                  <div class="col l4  s12 m6 ">
+                      <div class="card-panel teal ligher-1">
+                      
+                               <h5 class="black-text" >BANGALORE ADDRESS</h5>
+                     
+                   
+                        <div class="divider"></div>
+                        
+                        <p class="white-text">
+                            Hosapalya main road <br>
+                            Bommanahalli <br>
+                            Bangalore - 560 068<br>
+                            <i class="material-icons left">phone</i> +91 638 038 5552.
+                           </p>
+               
+                     
+                      </div>
+                  </div>
+                  <div class="col l4 s12 m6">
+                      <div class="card-panel teal lighter-1 ">
+                      
+                        <h5 class="black-text">COIMBATORE ADDRESS</h5>
+                    
+                        <div class="divider"></div>
+                     <p class="white-text">
+                         Karpagam Innovation Center <br>
+                         Myleripalayam <br>
+                         Coimbatore - 641 032 <br>
+                         <i class="material-icons left">phone</i> +91 638 010 2586.
+                     </p>
+                        </div>
+                  </div>
+
+                  <div class=" col l4 s12 m6" >
+                    <!--    <div class="col l3 offset-l4">
+                         <ul class="collection center" style="display:inline-block;" >
+                         <li class="collection-item"> <i style="vertical-align: text-bottom;" class="material-icons center"> phone</i> 9443949094 </li>
+                         <li class="collection-item ">  <a href="mailto:jiiva116@live.com"> <i class="material-icons left"> mail</i>EqraVifaa112@gmail.com </a> </li>
+                         </ul>
+                   </div> -->
+                   <div class="card-panel teal lighter-1 ">
+                     <h5 class="black-text">Don't hesitate to call. </h5>
+                        <p class="white-text">
+                          <i style="vertical-align: text-bottom;" class="material-icons center"> phone</i> +91 7373 546 635
+                        </p>
+                        <h5 class="black-text">Having Doubt's mail us. </h5>
+                        <p class="white-text ">
+                          <a class="white-text" href="mailto:eqravifaatech@gmail.com"> <i class="material-icons left"> mail</i>eqravifaatech@gmail.com </a>
+                        </p>
+                     </div>
+
+                  </div>
+              
+                </div>
+               
+                </div>
+            </div>
+                <!footer>
+                <footer class="page-footer " style="background-color:#283593">
+
+                       <div class="container-fluid">
+                         <div class="row">
+
+                          <div class="col l3 s12">
+                               <h5 class="white-text"> Our Community </h5>
+                               <p class="grey-text text-lighten-4">
+                                 A group of young engineers/individuals trying to create great
+                                 products that could change lifestyle of common people.
+                               </p>
+                           </div>
+
+                           <div class="col l3 s12">
+                             <h5 class="white-text">
+                               For Links
+                             </h5>
+                             <ul >
+                               <li > <a href="./blog.html" class="ext grey-text text-lighten-4" > Our Blog</a> </a> </li>
+                               <li ><a href="#about-us" class="grey-text text-lighten-4" > Who we Are ?</a> </li>
+                             </ul>
+                           </div>
+
+                           <div id="connect-with-us" class="col l3 s12">
+                             <h5 class="white-text">Connect With Us</h5>
+                             <ul >
+                               <li><a href="https://twitter.com/EqraViffaTech?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @EqraViffaTech</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </li>
+                                 <li >  <social-icon reference="https://facebook.com/Eqra-Viffa-Tech-1775195549452925/" type="facebook"> Like us </social-icon> </li>
+
+                             </ul>
+                           </div>
+
+                                   <div class="col l3 s12">
+                                   <h5 class="white-text">Support </h5> 
+                                   <a class="ext" href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a>
+                                   </div>
+
+                         </div>
+
+                         <div class="footer-copyright indigo accent-4 ">
+                           <div class="container">
+                              © 2017-2018 Copyright EqraViffa All rights reserved
+                            
+                           </div>
+                         </div>
+
+
+                       </div>
+                </footer>
+
+            </div>
+   <!--
+          <div class="carousel carousel-slider" hide-delimiters="true">
+            <a class="carousel-item" href="#one!"><img src="img/model/alessandra.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="img/model/jenner.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/model/kendall.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/model/kpop.jpg"></a>
           </div>
-          </div>
-  </div>
+          -->
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.min.js"></script>
+    <script src="./Vue_2.5.3.js"> </script>
+    <!--
+    <script src="https://unpkg.com/http-vue-loader"></script>
+     -->
+    <script src="./http-vue-loader.js"></script>
+<script text="text/javascript" >
+Vue.component('social-icon',{
+  props:{
+      type:{required:true},
+         reference:{default:'#'}
+  },
+  template:`<a :href="reference" target="_blank" :class="'waves-effect waves-light btn social '+type">
+<i :class="'fa fa-'+type"></i> <slot></slot> </a>`
+})
+let vue = new Vue({
+  el:"#main",
+  data:{
+    message:'hello'
+  },
+  mounted()
+  {
+ 
+         $('.button-collapse').sideNav({
+         closeOnClick: true
+          });
+   
+    $('.ext').attr('target','_blank');
+   
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+      $('.carousel').carousel({ padding: 200,duration:2500   });
+      setInterval( function(){$('.carousel').carousel('next');},7000);
 
-</div>
-<script src="Vue_2.5.3.js"> </script>
-<!--
-<script src="https://unpkg.com/http-vue-loader"></script>
- -->
-<script src="http-vue-loader.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script text="text/javascript">
-
-Vue.component('social',{
-      props:['icon','styling'],
-      template:`
-          <a :class="'btn btn-block btn-social btn-'+icon" :style="styling" >
-            <span :class="'fa fa-'+icon"></span>  <slot></slot>
-          </a> `,
-          data()
-          {
-            return {
-
-            }
-          }
-
-}
-  );
-  Vue.component('nav-justify',{
-
-template:`<ul class="nav justify-content-center"><slot></slot> </ul>`,
+      var options = [
+    
+      {selector: '.about-s', offset: 400, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      } },
+      {selector: '#about-us', offset: 500, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    Materialize.scrollFire(options);
+  },
+  methods:{
+    next()
+    {
+      $('.carousel').carousel('next');
+    },
+    prev()
+    {
+      $('.carousel').carousel('prev');
+    }
   }
-  );
-  Vue.component('item',{
-    props:{
-      styling:{
-        default:'margin-left:20px;margin-top:10px',
-      }
-    },
-    template:`<li class="nav-item" :style="styling"><slot></slot></li>`
-  });
-
-
-let main = new Vue({
-el:"#container",
-components:{
-  'card'       : httpVueLoader('./views/card.vue'),
-  'card-desk'  : httpVueLoader('./views/card-desk.vue'),
-  'jumbotron'  : httpVueLoader('./views/jumbotron.vue'),
-  'navigation' : httpVueLoader('./views/navigation.vue'),
-  'card-center': httpVueLoader('./views/card-center.vue'),
-  'bar':{
-    props:['styling','extras'],
-    template:`<nav :class="'navbar navbar-inverse navbar-default navbar-fixed-top important-class '+extras"  :style="styling" ><slot></slot> </nav>`,
-  },
-  'social-icon':{
-    props:['type'],
-  template:`<a :class="'btn btn-social-icon btn-'+type">
-    <span :class="'fa fa-'+type"></span>
-  </a>`
-  },
-
-  'font':{
-    props:['cls'],
-    template:'  <i :class="cls"></i>'
-    },
-
-
-}
-
 });
 </script>
 
   </body>
-  </html>
+</html>

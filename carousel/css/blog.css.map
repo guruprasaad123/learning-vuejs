@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAGA,KAAK;EACD,gBAAgB,EAAC,+BAAgC;EACpD,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;;AAIvB,aAAa;EACT,MAAM,EAAC,OAAO",
+"mappings": "AACA,KAAK;EACD,gBAAgB,EAAC,+BAAgC;EACpD,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;;AAMf,oCAAoB;EACpB,aAAa,EAAE,GAAG",
 "sources": ["blog.scss"],
 "names": [],
 "file": "blog.css"

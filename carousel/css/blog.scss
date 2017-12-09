@@ -1,6 +1,4 @@
-.blogs{
 
-}
 .card{
     background-image:url('../img/red-blue-blur.jpg') ;
  background-repeat: no-repeat;
@@ -8,6 +6,10 @@
 
 
 }
-.card-content{
-    height:inherit;
-}
+#connect-with-us {
+    
+        li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    
+    }

@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.card-content {
-  height: inherit; }
+#connect-with-us li:not(:last-child) {
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=blog.css.map */
